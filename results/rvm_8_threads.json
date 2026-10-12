@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-09-29T11:54:51.350740+00:00",
+  "cpu": "Apple M4 Pro",
+  "logical_cpus": 12,
+  "os": "macOS-26.4.1-arm64-arm-64bit",
+  "python": "3.10.19",
+  "versions": {
+    "mediapipe": "0.10.21",
+    "opencv": "4.11.0",
+    "numpy": "1.26.4",
+    "onnxruntime": "1.20.1"
+  },
+  "device": "CPU",
+  "backend": "RVM MobileNetV3 FP32 / ONNX Runtime CPUExecutionProvider",
+  "app_version": "2.0",
+  "source": "webcam",
+  "source_name": "camera:0",
+  "source_reported_fps": 30.0,
+  "source_resolution": [
+    640,
+    480
+  ],
+  "processing_resolution": [
+    640,
+    480
+  ],
+  "model_input_resolution": [
+    640,
+    480
+  ],
+  "rvm_internal_resolution": [
+    256,
+    192
+  ],
+  "total_processed_frames": 277,
+  "warmup_frames_excluded": 30,
+  "infer_every_n_frames": 1,
+  "stop_reason": "time_limit",
+  "settings": {
+    "camera": 0,
+    "input": null,
+    "width": 640,
+    "height": 480,
+    "camera_fps": 30,
+    "mode": "image",
+    "backend": "rvm",
+    "downsample_ratio": 0.4,
+    "rvm_threads": 8,
+    "color": [
+      40,
+      100,
+      180
+    ],
+    "background": null,
+    "background_dir": "/Users/r.gulyamov/Downloads/hw1_background_removal/backgrounds",
+    "model": 1,
+    "mask_filter": "guided",
+    "smooth": 0.25,
+    "threshold": 0.5,
+    "feather": 0.15,
+    "mirror": false,
+    "view": "split",
+    "headless": false,
+    "unpaced": false,
+    "warmup": 30,
+    "seconds": 15.0,
+    "max_frames": 0,
+    "opencv_threads": 1,
+    "metrics": "outputs/metrics_t2.json",
+    "output": "outputs/demo_t2.mp4",
+    "record_fps": 30
+  },
+  "recorded_video_frames": 451,
+  "measurement": {
+    "status": "ok",
+    "measured_frames": 247,
+    "processing_seconds": 4.845020505599678,
+    "loop_seconds": 15.048744594678283,
+    "processing_fps": 50.98017639234497,
+    "application_fps": 16.413329261189475,
+    "processing_latency_mean_ms": 19.61546763400679,
+    "processing_latency_p50_ms": 19.615541212260723,
+    "processing_latency_p95_ms": 23.66264229640364,
+    "loop_latency_p95_ms": 77.38930396735668
+  },
+  "measurement_by_background": {
+    "image:office.png": {
+      "status": "ok",
+      "measured_frames": 247,
+      "processing_seconds": 4.845020505599678,
+      "loop_seconds": 15.048744594678283,
+      "processing_fps": 50.98017639234497,
+      "application_fps": 16.413329261189475,
+      "processing_latency_mean_ms": 19.61546763400679,
+      "processing_latency_p50_ms": 19.615541212260723,
+      "processing_latency_p95_ms": 23.66264229640364,
+      "loop_latency_p95_ms": 77.38930396735668
+    }
+  },
+  "background_events": [],
+  "method": {
+    "processing": "N / sum(t_resize+mirror+RGB+inference+mask_refinement+composition), no capture/UI/recording",
+    "application": "N / elapsed loop time, including capture, processing, HUD, video writes, imshow/waitKey and playback pacing",
+    "excluded": "model/camera/window startup, warmup, EOF probe, final cleanup, JSON serialization",
+    "recording": "wall-clock CFR with repeats/drops; recorded frames are NOT performance samples"
+  },
+  "model_sha256": "88d4531297118f595bf2fd60f6f566aec2e559393802d1f436c380f0cbbd2828"
+}
